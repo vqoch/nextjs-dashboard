@@ -5,7 +5,7 @@ import { lusitana } from '@/app/ui/fonts';
 import { fetchRevenue } from '../lib/data';
  
 export default async function Page() {
-    const revenue = fetchRevenue();
+    const revenue = await fetchRevenue();
     
   return (
     <main>
